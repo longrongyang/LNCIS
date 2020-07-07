@@ -12,6 +12,9 @@ from .iou_loss import (BoundedIoULoss, GIoULoss, IoULoss, bounded_iou_loss,
 from .mse_loss import MSELoss, mse_loss
 from .pisa_loss import carl_loss, isr_p
 from .smooth_l1_loss import L1Loss, SmoothL1Loss, l1_loss, smooth_l1_loss
+from .new_combination_loss import NewCombinationLoss
+from .symmetric_cross_entropy_loss import SymmetricCrossEntropyLoss
+from .generalized_cross_entropy_loss import GeneralizedCrossEntropyLoss
 from .utils import reduce_loss, weight_reduce_loss, weighted_loss
 
 __all__ = [
@@ -22,5 +25,5 @@ __all__ = [
     'IoULoss', 'BoundedIoULoss', 'GIoULoss', 'GHMC', 'GHMR', 'reduce_loss',
     'weight_reduce_loss', 'weighted_loss', 'L1Loss', 'l1_loss', 'isr_p',
     'carl_loss', 'AssociativeEmbeddingLoss', 'GaussianFocalLoss',
-    'QualityFocalLoss', 'DistributionFocalLoss'
+    'QualityFocalLoss', 'DistributionFocalLoss', 'NewCombinationLoss', 'SymmetricCrossEntropyLoss', 'GeneralizedCrossEntropyLoss'
 ]
