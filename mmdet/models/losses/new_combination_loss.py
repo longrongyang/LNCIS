@@ -135,7 +135,7 @@ class NewCombinationLoss(nn.Module):
                  class_weight=None,
                  num_classes=9,
                  loss_weight1=1.0,
-                 loss_weight2=1.0):
+                 loss_weight2=0.1):
         super(NewCombinationLoss, self).__init__()
         assert (use_sigmoid is False) or (use_mask is False)
         self.use_sigmoid = use_sigmoid
