@@ -11,7 +11,7 @@ Please check [install.md](docs/install.md) for installation instructions.
 
 ## Data Generation
 
-Files [noisy_labels_AN_Cityscapes.py](/noisy_labels_AN_Cityscapes.py) and [noisy_labels_SN_Cityscapes.py](/noisy_labels_SN_Cityscapes.py) can be used to generate class labels with asymmetric noise and symmetric noise for Cityscapes dataset, respectively. The noise rate and the annotation file path need be set in these files. 
+Files [noisy_labels_AN_Cityscapes.py](/noisy_labels_AN_Cityscapes.py) and [noisy_labels_SN_Cityscapes.py](/noisy_labels_SN_Cityscapes.py) can be used to generate class labels with asymmetric noise and symmetric noise for Cityscapes dataset, respectively. The noise rate and the annotation file path need be set manually in these files. 
 
 ## Designed Loss
 
