@@ -3,7 +3,7 @@ ECCV2020: Learning with Noisy Class Labels for Instance Segmentation
 
 ## Introducton
 
-The project is based on mmdetection. More details will be released! The results in the paper are mainly based on older mmdetection (v1.0rc0).
+The project is based on mmdetection v2.2.0. More details will be released! The results in the paper are mainly based on older mmdetection (v1.0rc0).
 
 ## Installtion
 
