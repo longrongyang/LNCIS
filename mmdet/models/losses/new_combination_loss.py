@@ -176,12 +176,13 @@ class NewCombinationLoss(nn.Module):
 
         weight1 = 0.0 * torch.ones(len(label)).cuda()
         weight1[ce > 6.0] = 0.0
-        weight1[label == 0] = 1.0
-        weight1[label_false == 0] = 1.0
+        # Here, the label is set to 80 for background. If 0 is set to the label of background, it should be weight1[label == 0] = 1.0
+        weight1[label == 80] = 1.0
+        weight1[label_false == 80] = 1.0
         weight2 = 1.0 * torch.ones(len(label)).cuda()
         weight2[ce > 6.0] = 0.0
-        weight2[label == 0] = 0.0
-        weight2[label_false == 0] = 0.0
+        weight2[label == 80] = 0.0
+        weight2[label_false == 80] = 0.0
 
         ce = (weight1 * ce).mean()
         rce = (weight2 * rce).mean()
