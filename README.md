@@ -19,4 +19,4 @@ Our designed loss is provided in [new_combination_loss.py](/mmdet/models/losses/
 
 ## Stage-wise Training
 
-On Cityscapes dataset, models should be firstly trained with the config [mask_rcnn_r50_fpn_1x_cityscapes_nl_1.p](/configs/cityscapes/mask_rcnn_r50_fpn_1x_cityscapes_nl_1.py) in early stages of training. Then, in mature stages of training, the config [mask_rcnn_r50_fpn_1x_cityscapes_nl_2.p](mask_rcnn_r50_fpn_1x_cityscapes_nl_2.py) is used to train models.
+On Cityscapes dataset, models should be firstly trained with the config [mask_rcnn_r50_fpn_1x_cityscapes_nl_1.py](/configs/cityscapes/mask_rcnn_r50_fpn_1x_cityscapes_nl_1.py) in early stages of training. Then, in mature stages of training, the config [mask_rcnn_r50_fpn_1x_cityscapes_nl_2.py](/configs/cityscapes/mask_rcnn_r50_fpn_1x_cityscapes_nl_2.py) is used to train models.
