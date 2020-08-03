@@ -40,7 +40,7 @@ On COCO dataset:
   
   Similarly, noise under other datasets can be set.
 
-### 3.3. Stage-wise Training
+### 3.3. Stage-Wise Training
 
   For Cityscapes dataset:
   1. For the first stage, models should be trained with the config [mask_rcnn_r50_fpn_1x_cityscapes_nl_1.py](/configs/cityscapes/mask_rcnn_r50_fpn_1x_cityscapes_nl_1.py).
