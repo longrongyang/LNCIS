@@ -30,7 +30,7 @@ On COCO dataset:
 
   For symmetric noise:
   1. Open the file [noisy_labels_SN_Cityscapes.py](/noisy_labels_SN_Cityscapes.py).
-  2. Modify the noise rate r and the annotation path p.
+  2. Modify the noise rate r, the annotation path p_a and the store path p_g.
   3. Run the file [noisy_labels_SN_Cityscapes.py](/noisy_labels_SN_Cityscapes.py).
   
   For asymmetric noise:
