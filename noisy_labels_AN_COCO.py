@@ -9,11 +9,12 @@ def unjson(file):
 
 
 # r is noise rate
-r = 0.4
+r = 0.2
 
 count = 0
 
-a = unjson('')
+p = ''
+a = unjson(p)
 for i in range(len(a['annotations'])):
     # vehicle
     super1 = np.array([2, 3, 4, 5, 6, 7, 8, 9])
