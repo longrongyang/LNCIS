@@ -46,6 +46,8 @@ On COCO dataset:
   ```shell
   ./tools/dist_train.sh ${CONFIG_FILE} ${GPU_NUM} --resume-from ${MODEL_PATH}
   ```
+  The second stage needs use the model trained in the stage.
+  
   Other datasets should apply similar settings.
 
 ### 3.4. Evaluation
@@ -59,4 +61,5 @@ On COCO dataset:
   3. Generalized cross entropy loss is provided in [generalized_cross_entropy_loss.py](/mmdet/models/losses/generalized_cross_entropy_loss.py).
 
 ## 5. Contact
+
   My email is released in the paper.
