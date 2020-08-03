@@ -8,11 +8,12 @@ def unjson(file):
     return dict
 
 # r is noise rate
-r = 0.8
+r = 0.2
 
 count = 0
 
-a = unjson('')
+p = ''
+a = unjson(p)
 for i in range(len(a['annotations'])):
     if np.random.random() < r:
         id = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13,
