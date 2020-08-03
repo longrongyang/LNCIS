@@ -57,9 +57,7 @@ On COCO dataset:
 ## 4. Designed Loss
 
   1. Our designed loss is provided in [new_combination_loss.py](/mmdet/models/losses/new_combination_loss.py). 
+    - PON is not the key contribution of this paper and it brings marginal increase. You can select to use it or not.
+    - When the dataset type is changed, the label for background is changed. The corresponding change should be set in the file.
   2. Symmetric cross entropy loss is provided in [symmetric_cross_entropy_loss.py](/mmdet/models/losses/symmetric_cross_entropy_loss.py) 
   3. Generalized cross entropy loss is provided in [generalized_cross_entropy_loss.py](/mmdet/models/losses/generalized_cross_entropy_loss.py).
-
-## 5. Contact
-
-  My email is released in the paper.
