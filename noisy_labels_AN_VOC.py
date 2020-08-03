@@ -9,12 +9,13 @@ def unjson(file):
 
 
 # r is noise rate
-r = 0.4
+r = 0.2
 
 count = 0
 c = 0
 
-a = unjson('')
+p = ''
+a = unjson(p)
 for i in range(len(a['annotations'])):
     if a['annotations'][i]['category_id'] == 3:
         if np.random.random() < r:
