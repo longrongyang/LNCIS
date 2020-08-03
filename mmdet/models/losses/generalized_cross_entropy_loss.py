@@ -133,6 +133,7 @@ class GeneralizedCrossEntropyLoss(nn.Module):
                  use_mask=False,
                  reduction='mean',
                  class_weight=None,
+                 num_classes=8,
                  q=0.3):
         super(GeneralizedCrossEntropyLoss, self).__init__()
         assert (use_sigmoid is False) or (use_mask is False)
@@ -142,7 +143,7 @@ class GeneralizedCrossEntropyLoss(nn.Module):
         self.loss_weight = loss_weight
         self.class_weight = class_weight
         #
-        self.num_classes = 9
+        self.num_classes = num_classes + 1
         self.q = q
         self.softmax = torch.nn.Softmax(dim=1)
 
