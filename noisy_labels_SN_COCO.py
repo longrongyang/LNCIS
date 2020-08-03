@@ -12,8 +12,9 @@ r = 0.2
 
 count = 0
 
-p = ''
-a = unjson(p)
+p_a = ''
+p_g = ''
+a = unjson(p_a)
 for i in range(len(a['annotations'])):
     if np.random.random() < r:
         id = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13,
@@ -27,7 +28,7 @@ for i in range(len(a['annotations'])):
         index = np.random.randint(0, 79)
         a['annotations'][i]['category_id'] = int(id[index])
         count += 1
-with open('', 'w') as file:
+with open(p_g, 'w') as file:
     json.dump(a, file)
 
 print(count)
