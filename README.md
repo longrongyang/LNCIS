@@ -7,7 +7,7 @@ Instance segmentation has achieved siginificant progress in the presence of corr
 
 ![Overview](Illustration/Overview.png)
 
-The project is mainly based on mmdetection v2.2.0. More details will be released! Main results in the paper are based on older mmdetection (v1.0rc0).
+The project is based on mmdetection v2.2.0. Main results in the paper are based on older mmdetection (v1.0rc0).
 
 ## 2. Main Results
 
