@@ -25,6 +25,7 @@ On COCO dataset:
   Please check [install.md](docs/install.md) for installation instructions.
 
 ### 3.2. Data Generation
+
   For symmetric noise:
   1. Open the file [noisy_labels_SN_Cityscapes.py](/noisy_labels_SN_Cityscapes.py).
   2. Modify the noise rate r and the annotation path p.
@@ -39,6 +40,7 @@ On COCO dataset:
 
 ### 3.3. Stage-wise Training
 
+  For Cityscapes dataset:
   1. For the first stage, models should be trained with the config [mask_rcnn_r50_fpn_1x_cityscapes_nl_1.py](/configs/cityscapes/mask_rcnn_r50_fpn_1x_cityscapes_nl_1.py).
   2. For the second stage, models should be trained with the config [mask_rcnn_r50_fpn_1x_cityscapes_nl_2.py](/configs/cityscapes/mask_rcnn_r50_fpn_1x_cityscapes_nl_2.py).
   
