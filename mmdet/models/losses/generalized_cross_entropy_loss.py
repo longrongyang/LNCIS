@@ -142,7 +142,7 @@ class GeneralizedCrossEntropyLoss(nn.Module):
         self.loss_weight = loss_weight
         self.class_weight = class_weight
         #
-        self.num_classes = 21
+        self.num_classes = 9
         self.q = q
         self.softmax = torch.nn.Softmax(dim=1)
 
