@@ -41,10 +41,12 @@ On COCO dataset:
 
   1. For the first stage, models should be trained with the config [mask_rcnn_r50_fpn_1x_cityscapes_nl_1.py](/configs/cityscapes/mask_rcnn_r50_fpn_1x_cityscapes_nl_1.py).
   2. For the second stage, models should be trained with the config [mask_rcnn_r50_fpn_1x_cityscapes_nl_2.py](/configs/cityscapes/mask_rcnn_r50_fpn_1x_cityscapes_nl_2.py).
+  
+  Other datasets should apply similar settings.
 
 ### 3.4. Evaluation
   
-  PLease check [getting_started.md](docs/getting_started.md) for details.
+  Please check [getting_started.md](docs/getting_started.md) for details.
 
 ## 4. Designed Loss
 
