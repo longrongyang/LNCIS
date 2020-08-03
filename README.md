@@ -42,8 +42,10 @@ On COCO dataset:
 
   For Cityscapes dataset:
   1. For the first stage, models should be trained with the config [mask_rcnn_r50_fpn_1x_cityscapes_nl_1.py](/configs/cityscapes/mask_rcnn_r50_fpn_1x_cityscapes_nl_1.py).
-  2. For the second stage, models should be trained with the config [mask_rcnn_r50_fpn_1x_cityscapes_nl_2.py](/configs/cityscapes/mask_rcnn_r50_fpn_1x_cityscapes_nl_2.py).
-  
+  2. For the second stage, models should be trained with the config [mask_rcnn_r50_fpn_1x_cityscapes_nl_2.py](/configs/cityscapes/mask_rcnn_r50_fpn_1x_cityscapes_nl_2.py) like this:
+  ```shell
+  ./tools/dist_train.sh ${CONFIG_FILE} ${GPU_NUM} --resume-from ${MODEL_PATH}
+  ```
   Other datasets should apply similar settings.
 
 ### 3.4. Evaluation
@@ -55,3 +57,6 @@ On COCO dataset:
   1. Our designed loss is provided in [new_combination_loss.py](/mmdet/models/losses/new_combination_loss.py). 
   2. Symmetric cross entropy loss is provided in [symmetric_cross_entropy_loss.py](/mmdet/models/losses/symmetric_cross_entropy_loss.py) 
   3. Generalized cross entropy loss is provided in [generalized_cross_entropy_loss.py](/mmdet/models/losses/generalized_cross_entropy_loss.py).
+
+## 5. Contact
+  My email is released in the paper.
