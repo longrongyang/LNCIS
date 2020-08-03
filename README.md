@@ -25,5 +25,3 @@ On Cityscapes dataset, models should be firstly trained with the config [mask_rc
 ## Designed Loss
 
 Our designed loss is provided in [new_combination_loss.py](/mmdet/models/losses/new_combination_loss.py). Symmetric cross entropy loss and generalized cross entropy loss are also provided in [symmetric_cross_entropy_loss.py](/mmdet/models/losses/symmetric_cross_entropy_loss.py) and [generalized_cross_entropy_loss.py](/mmdet/models/losses/generalized_cross_entropy_loss.py), respectively.
-
-## Contact
