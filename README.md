@@ -29,10 +29,12 @@ On COCO dataset:
   1. Open the file [noisy_labels_SN_Cityscapes.py](/noisy_labels_SN_Cityscapes.py).
   2. Modify the noise rate r and the annotation path p.
   3. Run the file [noisy_labels_SN_Cityscapes.py](/noisy_labels_SN_Cityscapes.py).
+  
   For asymmetric noise:
   1. Open the file [noisy_labels_AN_Cityscapes.py](/noisy_labels_AN_Cityscapes.py).
   2. Modify the noise rate r and the annotation path p.
   3. Run the file [noisy_labels_AN_Cityscapes.py](/noisy_labels_AN_Cityscapes.py).
+  
   Similarly, noise under other datasets can be set.
 
 ### 3.3. Stage-wise Training
