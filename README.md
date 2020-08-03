@@ -46,7 +46,7 @@ On COCO dataset:
   ```shell
   ./tools/dist_train.sh ${CONFIG_FILE} ${GPU_NUM} --resume-from ${MODEL_PATH}
   ```
-  The second stage needs use the model trained in the stage.
+  The second stage needs use the model trained in the first stage.
   
   Other datasets should apply similar settings.
 
