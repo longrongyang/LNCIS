@@ -175,12 +175,12 @@ class NewCombinationLoss(nn.Module):
         rce = -1 * torch.sum(cls_score * torch.log(label_one_hot), dim=1)
 
         weight1 = 0.0 * torch.ones(len(label)).cuda()
-        # weight1[ce > 6.0] = 0.0    # PON, which is not the key contribution of our paper
-        weight1[label == 80] = 1.0    # Here, the label is set to 80 for background
+        # weight1[ce > 6.0] = 0.0    # PON
+        weight1[label == 8] = 1.0    # The label for background is set to 8
         weight1[label_false == 80] = 1.0
         weight2 = 1.0 * torch.ones(len(label)).cuda()
         # weight2[ce > 6.0] = 0.0    # PON
-        weight2[label == 80] = 0.0
+        weight2[label == 8] = 0.0
         weight2[label_false == 80] = 0.0
 
         ce = (weight1 * ce).mean()
