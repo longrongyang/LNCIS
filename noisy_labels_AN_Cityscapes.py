@@ -9,11 +9,12 @@ def unjson(file):
 
 
 # r is noise rate
-r = 0.4
+r = 0.2
 
 count = 0
 
-a = unjson('')
+p = ''
+a = unjson(p)
 annotations = a['annotations']
 images = a['images']
 for i in range(len(a['annotations'])):
