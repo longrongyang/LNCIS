@@ -13,8 +13,9 @@ r = 0.2
 
 count = 0
 
-p = ''
-a = unjson(p)
+p_a = ''
+p_g = ''
+a = unjson(p_a)
 annotations = a['annotations']
 images = a['images']
 for i in range(len(a['annotations'])):
@@ -32,7 +33,7 @@ for i in range(len(a['annotations'])):
         elif a['annotations'][i]['category_id'] == 4:
             a['annotations'][i]['category_id'] = 3
         count += 1
-with open('', 'w') as file:
+with open(p_g, 'w') as file:
     json.dump(a, file)
 
 print(count)
