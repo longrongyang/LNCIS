@@ -13,8 +13,9 @@ r = 0.2
 
 count = 0
 
-p = ''
-a = unjson(p)
+p_a = ''
+p_g = ''
+a = unjson(p_a)
 for i in range(len(a['annotations'])):
     # vehicle
     super1 = np.array([2, 3, 4, 5, 6, 7, 8, 9])
@@ -73,7 +74,7 @@ for i in range(len(a['annotations'])):
             index = np.random.randint(0, 6)
             a['annotations'][i]['category_id'] = int(super11[index])
         count += 1
-with open('', 'w') as file:
+with open(p_g, 'w') as file:
     json.dump(a, file)
 
 print(count)
