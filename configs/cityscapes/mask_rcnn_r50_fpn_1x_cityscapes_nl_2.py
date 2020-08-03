@@ -17,7 +17,7 @@ model = dict(
                 target_stds=[0.1, 0.1, 0.2, 0.2]),
             reg_class_agnostic=False,
             loss_cls=dict(
-                type='NewCombinationLoss', use_sigmoid=False, loss_weight1=1.0, loss_weight2=1.0),
+                type='NewCombinationLoss', use_sigmoid=False, num_classes=9, loss_weight1=1.0, loss_weight2=1.0),
             loss_bbox=dict(type='SmoothL1Loss', beta=1.0, loss_weight=1.0)),
         mask_head=dict(
             type='FCNMaskHead',
