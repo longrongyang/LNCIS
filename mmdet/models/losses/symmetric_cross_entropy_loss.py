@@ -133,9 +133,9 @@ class SymmetricCrossEntropyLoss(nn.Module):
                  use_mask=False,
                  reduction='mean',
                  class_weight=None,
-                 num_classes=9,
+                 num_classes=8,
                  loss_weight1=1.0,
-                 loss_weight2=1.0):
+                 loss_weight2=0.1):
         super(SymmetricCrossEntropyLoss, self).__init__()
         assert (use_sigmoid is False) or (use_mask is False)
         self.use_sigmoid = use_sigmoid
@@ -144,7 +144,7 @@ class SymmetricCrossEntropyLoss(nn.Module):
         self.loss_weight = loss_weight
         self.class_weight = class_weight
         #
-        self.num_classes = num_classes
+        self.num_classes = num_classes + 1
         self.loss_weight1 = loss_weight1
         self.loss_weight2 = loss_weight2
         self.softmax = torch.nn.Softmax(dim=1)
