@@ -29,14 +29,14 @@ On COCO dataset:
 ### 3.2. Data Generation
 
   For symmetric noise:
-  1. Open the file [noisy_labels_SN_Cityscapes.py](/noisy_labels_SN_Cityscapes.py).
+  1. Open the file [noisy_labels_SN_Cityscapes.py](https://github.com/longrongyang/LNCIS/blob/master/noisy_labels_SN_cityscapes.py).
   2. Modify the noise rate r, the annotation path p_a and the store path p_g.
-  3. Run the file [noisy_labels_SN_Cityscapes.py](/noisy_labels_SN_Cityscapes.py).
+  3. Run the file [noisy_labels_SN_Cityscapes.py](https://github.com/longrongyang/LNCIS/blob/master/noisy_labels_SN_cityscapes.py).
   
   For asymmetric noise:
-  1. Open the file [noisy_labels_AN_Cityscapes.py](/noisy_labels_AN_Cityscapes.py).
+  1. Open the file [noisy_labels_AN_Cityscapes.py](https://github.com/longrongyang/LNCIS/blob/master/noisy_labels_AN_Cityscapes.py).
   2. Modify the noise rate r， the annotation path p_a and the store path p_g.
-  3. Run the file [noisy_labels_AN_Cityscapes.py](/noisy_labels_AN_Cityscapes.py).
+  3. Run the file [noisy_labels_AN_Cityscapes.py](https://github.com/longrongyang/LNCIS/blob/master/noisy_labels_AN_Cityscapes.py).
   
   Similarly, noise under other datasets can be set.
 
