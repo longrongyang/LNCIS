@@ -1,5 +1,5 @@
 # Learning-with-Noisy-Class-Labels-for-Instance-Segmentation
-The code for implementing the [LNIS](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123590035.pdf)
+The code for implementing the [LNIS](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123590035.pdf).
 
 ## 1. Introducton
 
