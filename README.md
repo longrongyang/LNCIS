@@ -1,5 +1,5 @@
 # Learning-with-Noisy-Class-Labels-for-Instance-Segmentation
-The code for implementing the [LNIS](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123590035.pdf).
+The code for implementing the [Learning with Noisy Class Labels for Instance Segmentation](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123590035.pdf).
 
 ## 1. Introducton
 
@@ -69,8 +69,8 @@ Please consider citing our paper in your publications if the project helps your 
 
 ```
 @InProceedings{Yang_2020_ECCV,
-  title   = {Learning with Noisy Class Labels for Instance Segmentation,
-  author  = {Longrong, Yang and Fanman Meng and Hongliang Li and Qingbo, Wu and Qishang, Cheng},
+  title = {Learning with Noisy Class Labels for Instance Segmentation,
+  author = {Longrong, Yang and Fanman Meng and Hongliang Li and Qingbo, Wu and Qishang, Cheng},
   booktitle = {European Conference on Computer Vision (ECCV)},
   year={2020}
 }
