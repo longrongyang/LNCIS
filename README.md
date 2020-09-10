@@ -1,5 +1,5 @@
 # Learning-with-Noisy-Class-Labels-for-Instance-Segmentation
-The project about 'Learning with Noisy Class Labels for Instance Segmentation'.
+The code for implementing the LNIS[https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123590035.pdf]
 
 ## 1. Introducton
 
@@ -63,3 +63,15 @@ On COCO dataset:
   - When the dataset type is changed, the label assigned for background is changed. The corresponding change should be set in the file.
   2. Symmetric cross entropy loss is provided in [symmetric_cross_entropy_loss.py](/mmdet/models/losses/symmetric_cross_entropy_loss.py) 
   3. Generalized cross entropy loss is provided in [generalized_cross_entropy_loss.py](/mmdet/models/losses/generalized_cross_entropy_loss.py).
+  
+## 5. Citations
+Please consider citing our paper in your publications if the project helps your research. BibTeX reference is as follows.
+
+```
+@InProceedings{Yang_2020_ECCV,
+  title   = {Learning with Noisy Class Labels for Instance Segmentation,
+  author  = {Longrong, Yang and Fanman Meng and Hongliang Li and Qingbo, Wu and Qishang, Cheng},
+  booktitle = {European Conference on Computer Vision (ECCV)},
+  year={2020}
+}
+```
