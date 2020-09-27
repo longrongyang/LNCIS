@@ -20,18 +20,24 @@ annotations = a['annotations']
 images = a['images']
 for i in range(len(a['annotations'])):
     if np.random.random() < r:
-        if a['annotations'][i]['category_id'] == 1:
-            a['annotations'][i]['category_id'] = 6
-        elif a['annotations'][i]['category_id'] == 6:
-            a['annotations'][i]['category_id'] = 1
-        elif a['annotations'][i]['category_id'] == 5:
-            a['annotations'][i]['category_id'] = 7
-        elif a['annotations'][i]['category_id'] == 7:
-            a['annotations'][i]['category_id'] = 5
-        elif a['annotations'][i]['category_id'] == 3:
-            a['annotations'][i]['category_id'] = 4
-        elif a['annotations'][i]['category_id'] == 4:
-            a['annotations'][i]['category_id'] = 3
+        # person -> rider
+        if a['annotations'][i]['category_id'] == 24:
+            a['annotations'][i]['category_id'] = 25
+        # rider -> person
+        elif a['annotations'][i]['category_id'] == 25:
+            a['annotations'][i]['category_id'] = 24
+        # truck -> bus
+        elif a['annotations'][i]['category_id'] == 27:
+            a['annotations'][i]['category_id'] = 28
+        # bus -> truck
+        elif a['annotations'][i]['category_id'] == 28:
+            a['annotations'][i]['category_id'] = 27
+        # motorcycle -> bicycle
+        elif a['annotations'][i]['category_id'] == 32:
+            a['annotations'][i]['category_id'] = 33
+        # bicycle -> motorcycle
+        elif a['annotations'][i]['category_id'] == 33:
+            a['annotations'][i]['category_id'] = 32
         count += 1
 with open(p_g, 'w') as file:
     json.dump(a, file)
