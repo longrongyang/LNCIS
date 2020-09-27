@@ -169,6 +169,7 @@ class SymmetricCrossEntropyLoss(nn.Module):
         cls_score = torch.clamp(cls_score, min=1e-7, max=1.0)
         label_one_hot = torch.clamp(label_one_hot, min=1e-4, max=1.0)
 
+        ce = -1 * torch.sum(label_one_hot * torch.log(cls_score), dim=1) 
         rce = -1 * torch.sum(cls_score * torch.log(label_one_hot), dim=1)
 
         ce = ce.mean()
