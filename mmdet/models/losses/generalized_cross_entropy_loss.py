@@ -140,7 +140,6 @@ class GeneralizedCrossEntropyLoss(nn.Module):
         self.use_sigmoid = use_sigmoid
         self.use_mask = use_mask
         self.reduction = reduction
-        self.loss_weight = loss_weight
         self.class_weight = class_weight
         #
         self.num_classes = num_classes + 1
