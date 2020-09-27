@@ -149,7 +149,8 @@ class NewCombinationLoss(nn.Module):
         self.loss_weight2 = loss_weight2
         self.softmax = torch.nn.Softmax(dim=1)
         self.threshold = 0.6
-        self.background_class = num_classes
+        # The class assigned to background
+        self.background_class = num_classes  
 
         if self.use_sigmoid:
             self.cls_criterion = binary_cross_entropy
@@ -178,7 +179,7 @@ class NewCombinationLoss(nn.Module):
 
         weight1 = 0.0 * torch.ones(len(label)).cuda()
         # weight1[ce > self.threshold] = 0.0    # PON
-        weight1[label == self.background_class] = 1.0    # The label for background is set to 8
+        weight1[label == self.background_class] = 1.0 
         weight1[label_false == self.background_class] = 1.0
         weight2 = 1.0 * torch.ones(len(label)).cuda()
         # weight2[ce > self.threshold] = 0.0    # PON
