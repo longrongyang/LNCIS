@@ -67,9 +67,9 @@ On COCO dataset:
 Please consider citing our paper in your publications if the project helps your research. BibTeX reference is as follows.
 
 ```
-@InProceedings{Yang_2020_ECCV,
-  title = {Learning with Noisy Class Labels for Instance Segmentation,
-  author = {Longrong, Yang and Fanman Meng and Hongliang Li and Qingbo, Wu and Qishang, Cheng},
+@inproceedings{yang2020lncis,
+  title = {Learning with Noisy Class Labels for Instance Segmentation},
+  author = {Longrong, Yang and Fanman, Meng and Hongliang, Li and Qingbo, Wu and Qishang, Cheng},
   booktitle = {European Conference on Computer Vision (ECCV)},
   year={2020}
 }
